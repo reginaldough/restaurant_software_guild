@@ -1,7 +1,7 @@
 /*
 Creator: Reginald
 Date created: 2021-07-26
-Date last modified: 2021-08-03
+Date last modified: 2021-08-23
 */
 body{
 
@@ -27,7 +27,6 @@ body{
     
         .clear-float {clear:both;
         }
-    
        
 .clear-float {clear:both;
 }
@@ -51,14 +50,5 @@ body{
     text-align: center;
 }
 
-
-/* .address {
-    text-align: center;
-}
-
-.phonenumber {
-    text-align: center;
-}
-     */
 
 
