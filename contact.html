@@ -1,15 +1,19 @@
 <!-- 
 	Name: Reginald Umali
 	Date Created: 2021-07-20
-	Most recent revision: 2021-08-23
+	Most recent revision: 2021-08-25
 -->
 <!DOCTYPE html>
 <html lang="en">
 
 
 <html>
-
-	<center><h1> Reginald's Dough </h1></center>
+<center><div class="container">
+	<div class="jumbotron">
+		<h1>Reginald's Dough</h1>
+		<p>We are opening a new location on the 28th!</p>
+</div></center>
+	<!-- <center><h1> Reginald's Dough </h1></center> -->
 <body>	
 <hr />
 <nav>
@@ -17,6 +21,7 @@
 		<p><a href="Menu.html">Menu</a></p>
 		<p><a href="contact.html">Contact Us</a></p>
 		<div class="clear-float"></div>
+
 <hr />
 </nav>
 <head>
@@ -40,8 +45,13 @@
 			<option value="Feedback" selected>Feedback</option>
 			<option value="Other" selected>Other</option>
 	</select>
-	
-<fieldset>
+	<br>
+
+
+	<label for="info">Additional Information:</label><br />
+	<textarea id="info"></textarea><br />
+
+	<fieldset>
 	<legend>Have you been to the restuarant</legend>
 		<input type="radio" id="choice1" name="restuarant" value="yes"
 			<label for="choice1">Yes</label><br />
