@@ -42,14 +42,22 @@
 <hr />
 </nav>
 <head>
-	<script>
-		function validateForm() {
-  let x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
+<script>
+const Name = document.getElementById('Name')
+const email = document.getElementById('Email')
+
+form.addEventListener('submit', (e) => {
+	let messages = []
+	if (name.value === '' || name.value == null){
+		messages.push('Name is Required')
+	}
+	
+	if (email.value.length <= 6){
+		message.push ('Email has to be longer than 6 characters')
+	}
+	
+})
+
 </script>
 	
 	<title>Contact Us</title>	
@@ -58,12 +66,16 @@
 
 <body>
 <center>
-	
-
-	<label for="Name">Name: </label><br />
+	<div id="error"></div>
+	<form action="/" method="post">
+<div>
+		<label for="Name">Name: </label><br />
 	<input type="text" id="Name" name="name" required ><br />
+</div>
+<div>
 	<label for="email">Email: </label><br />
 	<input type="text" id="email" name="email"><br />
+</div>
 	<label for="phone">Phone: </label><br />
 	<input type="text" id="phone" name="phone"><br />	
 	<label for="Inquiry">Reason for Inquiry:</label><br />
@@ -73,7 +85,7 @@
 			<option value="Feedback" selected>Feedback</option>
 			<option value="Other" selected>Other</option>
 	</select>
-</form>
+
 	<br>
 
 
@@ -106,9 +118,12 @@
 
 		</body>
 
-
+	
 
 </fieldset>
+<button type="submit">Send Request</button>
+</form>
+
 
 
 <div class="footer">
@@ -118,11 +133,7 @@
 </div>
 	</body>
 
-	
-	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-		<button type="text" name="fname">
-		<input type="submit" value="Submit">
-		</form>
+
 
 
 </body>
